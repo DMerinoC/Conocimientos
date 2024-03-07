@@ -1,1 +1,1 @@
-Utilizar la consola para js. Hay explicaciones en ella.
+Utilizar la consola del navegador para ver información adicional de JS, hay explicaciones en ella. Se usó la etiqueta script en archivos HTML para evitar tener tantos archivos JS.
