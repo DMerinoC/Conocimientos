@@ -1,0 +1,120 @@
+// ------------------------------------------------------------------------------------------------------------------------------------
+//MIXINS O FUNCIONES
+@mixin borde($borde, $color) {
+    outline: $borde solid $color;
+}
+
+// ------------------------------------------------------------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------------------------------------------------------------
+//CLASE EXTENDIDA
+.tamañosDiv {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+}
+
+// ------------------------------------------------------------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------------------------------------------------------------
+
+.figuras {
+    width: 400px;
+    height: 400px;
+    // outline: 2px solid black;
+    @include borde(2px, #ce2e);
+    background-color: lightblue;
+    position: absolute;
+    z-index: 10;
+    overflow: hidden;
+
+    .figuras_cajasImg1 {
+        z-index: 5; //para que se mantenga en intermedio y no intefiera con el div(".figuras")
+
+        @extend .tamañosDiv; //CLASE EXTENDIDA
+        background-color: rgb(#98c1d9,0.5);
+
+        .imagen1 {
+            @extend .tamañosDiv; //CLASE EXTENDIDA
+            top: -200px;
+            z-index: -1;
+        }
+    }
+
+    .figuras_cajasImg2 {
+        @extend .tamañosDiv; //CLASE EXTENDIDA
+        right: 0;
+        background-color: rgb(#3d5a80,0.5);
+        z-index: 5;
+
+        .imagen2 {
+            @extend .tamañosDiv; //CLASE EXTENDIDA
+            right: -200px;
+        }
+    }
+
+    .figuras_cajasImg3 {
+        @extend .tamañosDiv; //CLASE EXTENDIDA
+        bottom: 0;
+        background-color: rgb(#e0fbfc,0.5);
+        z-index: 5;
+
+        .imagen3 {
+            @extend .tamañosDiv; //CLASE EXTENDIDA
+            left: -200px;
+        }
+    }
+
+    .figuras_cajasImg4 {
+        @extend .tamañosDiv; //CLASE EXTENDIDA
+        bottom: 0;
+        right: 0;
+        background-color: rgb(#ee6c4d,0.5);
+        z-index: 5;
+
+        .imagen4 {
+            @extend .tamañosDiv; //CLASE EXTENDIDA
+            bottom: -200px;
+            right: 0;
+        }
+    }
+}
+
+div:hover {
+    >.figuras_cajasImg1 {
+        background-color: rgb(#98c1d9,1);
+
+        >.imagen1 {
+            position: absolute;
+            top: 0;
+        }
+    }
+
+    >.figuras_cajasImg2 {
+        background-color: rgb(#3d5a80,1);
+
+        >.imagen2 {
+            position: absolute;
+            right: 0;
+        }
+    }
+
+    >.figuras_cajasImg3 {
+        background-color: rgb(#e0fbfc,1);
+
+        >.imagen3 {
+            position: absolute;
+            left: 0;
+        }
+    }
+
+    >.figuras_cajasImg4 {
+        background-color: rgb(#ee6c4d,1);
+
+        >.imagen4 {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+
+        }
+    }
+
+}

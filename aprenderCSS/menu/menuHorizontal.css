@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.menu {
+  /* outline: 2px solid black; */
+  width: 1000px;
+  position: relative;
+}
+.menu ul {
+  /* outline: 2px solid black; */
+  line-height: 0;
+  list-style: none;
+  display: block;
+  float: left;
+}
+.menu a {
+  /* outline: 2px solid black; */
+  position: relative;
+  background-color: #4357ad;
+  width: 100px;
+  height: 20px;
+  text-decoration: none;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+.menu a:hover {
+  background-color: blue;
+}
+input[type="text"] {
+  border: 2px solid red;
+}
+input::placeholder {
+  opacity: 0.4;
+}

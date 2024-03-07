@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const usuario = {
+        nombre: "Diego",
+        edad: 23,
+        pais: "Peru",
+        correo: "damc@hotmail.com",
+        profesion: "dev web",
+      };
+      // PRIMERA FORMA
+      //   const { nombre, edad, pais, correo, profesion } = usuario;
+      // SEGUNDA FORMA
+      const imprimir = ({ nombre, edad }) => {
+        console.log(nombre, edad);
+      };
+      imprimir(usuario);
+    </script>
+  </body>
+</html>

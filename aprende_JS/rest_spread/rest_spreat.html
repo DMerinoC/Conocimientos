@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // PARÁMETROS REST
+      // cuando creamos un objeto y no sabemos cuantas propiedades van a tener
+      const mostrarDatos = (...datos) => {
+        console.log(datos);
+      };
+      mostrarDatos("Diego", 23, "damc9@gmail.com", "Peru");
+      // PARÁMETROS SPREAD
+      const mostrarDatos2 = (...datos) => {
+        console.log(datos);
+      };
+      const arregloDatos = ["Diego", 23, "damc9@gmail.com", "Peru"];
+      mostrarDatos(...arregloDatos);
+    </script>
+  </body>
+</html>

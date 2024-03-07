@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.menu {
+  outline: 2px solid black;
+  width: 200px;
+}
+.menu ul {
+  /* outline: 2px solid black; */
+  list-style: none;
+}
+.menu a {
+    position: relative;
+  background-color: #4357ad;
+  outline: 2px solid black;
+  width: 200px;
+  height: 20px;
+  text-decoration: none;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+.menu a:hover {
+  background-color: blue;
+}

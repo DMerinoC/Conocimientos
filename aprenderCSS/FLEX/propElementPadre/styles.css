@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+body {
+  background-color: #f2f2f2;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.contenedor {
+  width: 80%;
+  max-width: 700px;
+  height: 500px;
+  background-color: #212d48;
+  display: flex;
+  /* flex-direction: row; */ /* arreglar la direccion de los divs, ejemplo filas o columnas*/
+  /* flex-wrap: wrap; */ /* esta propiedad wrap hace que los items de los contenedores quepan en él */
+  flex-flow: row wrap; /*ESTA PROPIEDAD UNE LAS DOS ANTERIORES*/
+  /* justify-content: space-around; */
+  justify-content: space-between; /*ESTA PROPIEDAD DEJA UN PEQUEÑO ESPACIADO A CADA LADO SIRVE PARA EL EJE X*/
+  align-items: baseline; /*ALINEAR VERTICALMENTE, SIRVE PARA UNA SOLO COLUMNA SIRVE PARA EL EJE Y, JUNTO CON LA PROPIEDAD DE ABAJO */
+  align-content: space-around; /*ESTA PROPIEDAD SIRVE PARA MÁS COLUMNAS*/
+}
+.cajas {
+  width: 100px;
+  height: 100px;
+  background-color: #f79256;
+  text-align: center;
+  margin: 20px;
+  padding: 20px;
+  font-size: 40px;
+  color: #fff;
+}
+#dos {
+  font-size: 60px;
+}
+/* REFERENCIA */
+  /* https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */

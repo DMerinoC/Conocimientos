@@ -1,0 +1,13 @@
+/* @font-face{
+    font-family: "Roboto-BlackItalic";
+    src: url(fontFamily/Roboto-BlackItalic.ttf);
+}
+
+p{
+    font-family: "Roboto-BlackItalic";
+} */
+/* LA OTRA FORMA ES HACIENDO EN HTML */
+/* la parte de abajo forma parte de la segunda forma */
+p{
+    font-family: 'Roboto', sans-serif;
+}

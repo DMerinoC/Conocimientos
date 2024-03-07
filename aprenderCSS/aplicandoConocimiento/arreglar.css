@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+body {
+  background: #353028;
+}
+.contenedor {
+  margin: 20px auto;
+  width: 90%;
+  max-width: 1000px;
+}
+header {
+  /* outline: 2px solid black; */
+  width: 100%;
+  background: #fff;
+}
+header nav ul {
+  width: 100%;
+  list-style: none;
+  overflow: hidden;
+}
+header nav ul li {
+  /* border: 2px solid black; */
+  float: left;
+}
+.listaNav a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 15px 20px;
+  color: #000;
+}
+
+header nav ul li a:hover {
+  background: #000;
+  color: #fff;
+}
+.main {
+  width: 70%;
+  background: white;
+  float: left;
+}
+.main .imagen {
+  width: 100%;
+}
+.main .imagen img {
+  width: 100%;
+  line-height: 0;
+  vertical-align: top;
+}
+.main .post {
+  padding: 40px;
+}
+.main .post article h2 {
+  margin-bottom: 20px;
+  color: blueviolet;
+}
+.main .post article p {
+  margin-bottom: 20px;
+  line-height: 27px;
+}
+aside {
+  width: 30%;
+  background: #161f16;
+  padding: 20px;
+  color: white;
+  float: left;
+}
+aside .widget {
+  margin-bottom: 20px;
+}
+aside .widget .titulo {
+  color: #ff0000;
+  border-bottom: 1px solid #ff0000;
+  margin-bottom: 20px;
+}
+aside .widget ul {
+  list-style: none;
+}
+aside .widget ul li {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 10px 0;
+}
+aside .widget ul li a {
+  color: white;
+  text-decoration: none;
+}
+aside .widget ul li a:hover {
+  color: #8f8f8f;
+}
+aside .widget p {
+  line-height: 27px;
+}
+footer {
+  width: 70%;
+  clear: both;
+  color: #fff;
+  background: black;
+  padding: 15px 0;
+  text-align: center;
+}
+
+/* mediaqueries */
+@media screen and (max-width: 800px) {
+  header {
+    width: 100%;
+  }
+  .main {
+    width: 100%;
+  }
+  aside {
+    width: 100%;
+  }
+  footer {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 440px) {
+  header nav ul li {
+    float: none;
+  }
+  .listaNav a {
+    padding: 5% 43%;
+  }
+}

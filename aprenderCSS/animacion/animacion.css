@@ -1,0 +1,54 @@
+@keyframes animar {
+  /* una forma de animar no tan precisa */
+  /* from{background: black;}
+    to{background: yellow;} */
+  0% {
+    background-color: red;
+    width: 400px;
+  }
+  20% {
+    background-color: red;
+    width: 400px;
+  }
+  40% {
+    background-color: yellow;
+    width: 200px;
+  }
+  60% {
+    background-color: red;
+    width: 400px;
+  }
+  80% {
+    background-color: yellow;
+    width: 200px;
+  }
+  100% {
+    background-color: red;
+    width: 400px;
+  }
+}
+
+@keyframes mover {
+  /* IGUAL SE PUEDE USAR EL FROM TO */
+  0% {
+    transform: translatex(0px);
+  }
+  50% {
+    transform: translatex(1000px);
+  }
+  100% {
+    transform: translatex(0px);
+  }
+}
+
+.caja {
+  background-color: yellow;
+  width: 200px;
+  height: 200px;
+  outline: 2px solid black;
+  animation-name: animar;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  /* animation: mover 2s infinite; */
+}

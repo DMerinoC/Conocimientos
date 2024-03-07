@@ -1,0 +1,13 @@
+/* ESTA ES LA FORMA CLÁSICA DE CREAR COLUMNAS CON GRID */
+/* .contenedor{
+    display: grid;
+    grid-template-columns: minmax(200px, 1fr) 1fr 1fr;
+    grid-template-rows: minmax(150px, auto) 70px 150px;
+    gap: 20px;
+} */
+/* OTRA FORMA DE CREAR COLUMNAS Y FILAS ES CON LA FUNCIÓN REPEAT */
+.contenedor{
+    display: grid;
+    grid-template-columns: 200px repeat(6,1fr);
+    grid-template-rows: repeat(3, 1fr);
+}

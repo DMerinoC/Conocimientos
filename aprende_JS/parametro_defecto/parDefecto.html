@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function registrarUsuario(
+        nombre = "no especificado",
+        pais = "no especificado",
+        correo = "no especificado",
+        telefono = "no especificado"
+      ) {
+        return `nombre: ${nombre}, pais: ${pais}, correo: ${correo}, telefono: ${telefono}`;
+      }
+      console.log(registrarUsuario("Diego", undefined, "damc@hotmail.com"));
+    </script>
+  </body>
+</html>

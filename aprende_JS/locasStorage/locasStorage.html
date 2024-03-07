@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      if (typeof localStorage !== "undefined") {
+        document.write("el navegador soporta el LS");
+        // ESTABLECEMOS UN VALOR
+        localStorage.setItem("nombre", "Diego");
+      } else {
+        document.write("el navegador no soporta el LS");
+      }
+      document.write("<br>");
+      // MOSTRAMOS EL VALOR DEL LS
+      document.write(localStorage.nombre);
+      document.write("<br>");
+      // ELIMINAMOS EL VALOR DEL LS
+      localStorage.removeItem("nombre");
+      document.write(localStorage.nombre);
+      document.write("<br>");
+      //   GUARDA UN VALOR HASTA QUE SE CIERRE LA PAGINA
+      sessionStorage.nombre = "DAMC99";
+      document.write(sessionStorage.nombre);
+    </script>
+  </body>
+</html>

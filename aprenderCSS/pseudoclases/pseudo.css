@@ -1,0 +1,16 @@
+/* LAS PSEUDOCLASES TIENEN : */
+.libro {
+  width: 300px;
+}
+.libro:hover {
+  text-decoration: underline;
+}
+div p:nth-child(1) {
+  background: lightblue;
+}
+div p:nth-child(2) {
+  background: yellow;
+}
+div p:nth-child(3) {
+  background: purple;
+}

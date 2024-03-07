@@ -1,0 +1,52 @@
+* {
+  padding: 0;
+  margin: 0;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  background: #eeeeee;
+  color: #000;
+  font-family: sans-serif;
+}
+.header p {
+  font-size: 50px;
+  text-align: center;
+  padding: 20px 0;
+}
+.contenedor {
+  width: 90%;
+  max-width: 1000px;
+  border: 10px solid;
+  margin: auto;
+  font-size: 50px;
+  line-height: 50px;
+  text-align: center;
+}
+.contenedor > div {
+  display: block;
+  padding: 20px;
+  color: #fff;
+  background-color: #16a1e6;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.25);
+}
+.contenedor {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 150px);
+  /* ALINEACIÓN HORIZONTAL */
+  justify-items: stretch;
+  /* ALINEACIÓN VERTICAL */
+  align-items: stretch;
+  /* EL stretch ocupa todo el espacio disponible */
+}
+
+.contenedor .item5 {
+  background-color: #b82828;
+  /* ALINEACIÓN HORIZONTAL ESPECÍFICA DE UN DIV */
+  justify-self: center;
+  /* ALINEACIÓN VERTICAL ESPECÍFICA DE UN DIV */
+  align-self: center;
+}

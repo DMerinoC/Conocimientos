@@ -1,0 +1,145 @@
+/* UN DISEÑO QUE UTILICÉ SIN BOOTSTRAP */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+.numeros {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0px auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 10px;
+  outline: 2px solid black;
+  /* grid-template-areas:
+    ".numero1 .numero2 .numero3 .signo1"
+    ".numero4 .numero5 .numero6 .signo2"
+    ".numero6 .numero7 .numero8 .signo3"
+    ".numero0 .signo4 .signo5 .signo6"
+    ".signo7 .signo8 .signo9 .signo9"; */
+}
+form {
+  outline: 2px solid black;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0px auto;
+}
+h1 {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0px auto;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+}
+button {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  /* outline: 2px solid black; */
+}
+input[type="text"] {
+  width: 100%;
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px solid #000;
+}
+.signo9 {
+  background-color: #4fb560;
+  color: #fff;
+}
+/* ------------------------------ */
+/* ------------------------------ */
+/* POSICIONAMIENTO DE BOTONES */
+.numeros .numero1 {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  /* grid-area: 1/2/1/2; */
+}
+.numeros .numero2 {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  /* grid-area: 2/3/1/2; */
+}
+.numeros .numero3 {
+  grid-column: 3/4;
+  grid-row: 1/2;
+  /* grid-area: 3/4/1/2; */
+}
+.numeros .numero4 {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  /* grid-area: 1/2/2/3; */
+}
+.numeros .numero5 {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  /* grid-area: 2/3/2/3; */
+}
+.numeros .numero6 {
+  grid-column: 3/4;
+  grid-row: 2/3;
+  /* grid-area: 3/4/2/3; */
+}
+.numeros .numero7 {
+  grid-column: 1/2;
+  grid-row: 3/4;
+  /* grid-area: 1/2/3/4; */
+}
+.numeros .numero8 {
+  grid-column: 2/3;
+  grid-row: 3/4;
+  /* grid-area: 2/3/3/4; */
+}
+.numeros .numero9 {
+  grid-column: 3/4;
+  grid-row: 3/4;
+  /* grid-area: 3/4/3/4; */
+}
+.numeros .numero0 {
+  grid-column: 1/2;
+  grid-row: 4/5;
+  /* grid-area: 1/2/4/5; */
+}
+.numeros .signo1 {
+  grid-column: 2/3;
+  grid-row: 4/5;
+}
+.numeros .signo2 {
+  grid-column: 4/5;
+  grid-row: 2/3;
+}
+.numeros .signo3 {
+  grid-column: 4/5;
+  grid-row: 1/2;
+}
+.numeros .signo4 {
+  grid-column: 4/5;
+  grid-row: 3/4;
+}
+.numeros .signo5 {
+  grid-column: 4/5;
+  grid-row: 4/5;
+}
+.numeros .signo6 {
+  grid-column: 3/4;
+  grid-row: 4/5;
+}
+.numeros .signo7 {
+  grid-column: 1/2;
+  grid-row: 5/6;
+}
+.numeros .signo8 {
+  grid-column: 2/3;
+  grid-row: 5/6;
+}
+.numeros .signo9 {
+  grid-column: 3/5;
+  grid-row: 5/6;
+}
+/* ------------------------------ */
+/* ------------------------------ */

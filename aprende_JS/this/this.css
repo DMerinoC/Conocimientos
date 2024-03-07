@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+.caja {
+  width: 100px;
+  height: 100px;
+  margin: 5px;
+  background-color: #c31f1f;
+  text-align: center;
+  float: left;
+  font-size: 40px;
+  color: #fff;
+  cursor: pointer;
+  user-select: none; /*seleccionar o no seleccionar texto*/
+}
+.gris {
+  background-color: #4f4545;
+}

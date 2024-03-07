@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+body {
+  background-color: #f2f2f2;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.contenedor {
+  width: 80%;
+  max-width: 700px;
+  height: 500px;
+  background-color: #212d48;
+  display: flex;
+  flex-flow: row wrap;
+}
+.cajas {
+  width: 100px;
+  height: 100px;
+  background-color: #f79256;
+  text-align: center;
+  margin: 20px;
+  padding: 20px;
+  font-size: 40px;
+  color: #fff;
+  /* order: 3; */
+  /* flex-grow: 1; */
+  /* flex-shrink: 0; */
+  flex-basis: 100px;
+}
+/*--------------------------------------------------------------------------------------*/
+/* flex-grow    aumentar el tamaño en proporcion a un numero que digites*/
+/* .tres {
+  flex-grow: 4;
+}
+.dos {
+  flex-grow: 2;
+} */
+/*--------------------------------------------------------------------------------------*/
+/* order        ordenar el orden de los contenedores dependiendo del numero que le demos  */
+/* .tres{
+    order: 2;
+  } */
+/*No existe el order 0*/
+/* .dos{
+    order: 1;
+  } */
+/*--------------------------------------------------------------------------------------*/
+/* flex-shrink  nuestro contenedor no podra disminuir su tamaño aunque nuestra ventana disminuya el suyo */
+/*--------------------------------------------------------------------------------------*/
+/* flex-basis   se trabaja el ancho o el alto dependiendo si nuestro flex está en row o en column respectivamente */

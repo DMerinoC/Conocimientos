@@ -1,0 +1,592 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  font-family: "Piazzolla", serif;
+  font-size: 10px;
+}
+/* -------------------------------------------------------- */
+/* -------------------------------------------------------- */
+:root {
+  --minHeightHeader: 128px;
+
+  --inicioHeight: 470px;
+  --modulosHeight: 598px;
+  --tecnologiasHeight: 598px;
+  --contactoHeight: 598px;
+}
+/* -------------------------------------------------------- */
+/* -------------------------------------------------------- */
+.col-1 {
+  width: 8.33%;
+}
+.col-2 {
+  width: 16.66%;
+}
+.col-3 {
+  width: 24.99%;
+}
+.col-4 {
+  width: 33.32%;
+}
+.col-5 {
+  width: 41.65%;
+}
+.col-6 {
+  width: 49.98%;
+}
+.col-7 {
+  width: 58.31%;
+}
+.col-8 {
+  width: 66.64%;
+}
+.col-9 {
+  width: 74.97%;
+}
+.col-10 {
+  width: 83.3%;
+}
+.col-11 {
+  width: 91.63%;
+}
+.col-12 {
+  width: 100%;
+}
+/* -------------------------------------------------------- */
+.row {
+  content: "";
+  display: table;
+  clear: both;
+  width: 100%;
+}
+/* -------------------------------------------------------- */
+[class*="col-"] {
+  float: left;
+  min-height: 1px;
+  /* para que no desaparezca el div ya que si no tiene altura desaparece */
+}
+/* -------------------------------------------------------- */
+/* -------------------------------------------------------- */
+/* caracteristicas generales */
+.padT {
+  padding-top: 10px;
+}
+.padR {
+  padding-right: 10px;
+}
+.padB {
+  padding-bottom: 10px;
+}
+.padL {
+  padding-left: 10px;
+}
+.pad {
+  padding: 10px;
+}
+.pad15 {
+  padding: 15px;
+}
+.fondoVerde {
+  background-color: #51ff00;
+}
+.fondoAzul {
+  background-color: #1e00ff;
+}
+/* -------------------------------------------------------- */
+/* -------------------------------------------------------- */
+/* clases */
+.header {
+  background-color: #811b1b;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.logoPrincipal {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  min-height: 100%;
+  background-color: rgb(56, 54, 181);
+  min-height: var(--minHeightHeader);
+  border: none;
+  border-top: 2px solid #000;
+  border-left: 2px solid #000;
+  min-height: 130px;
+}
+.textoTitulo {
+  font-size: 30px;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+  min-height: 130px;
+  max-height: var(
+    --minHeightHeader
+  ); /* hice correcion en esta linea, le agregué esta carateristica para que no desborde cuando le aumento letras
+ */
+}
+.borR4 {
+  border-right: solid 4px #000;
+}
+.contenedorh1 {
+  display: flex;
+  align-items: center;
+  background-color: #8173e7;
+  height: var(--minHeightHeader);
+  max-height: var(--minHeightHeader);
+  border: none;
+  border-top: 2px solid #000;
+}
+.opcion {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  min-height: var(--minHeightHeader);
+}
+.menuOpciones {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #37b800;
+  min-height: var(--minHeightHeader);
+  border: 2px solid #000;
+  border-bottom: none;
+  border-left: none;
+}
+.inicioProject {
+  width: 100%;
+  height: var(--inicioHeight);
+  background-color: #5aba2e;
+}
+.modulosProject {
+  width: 100%;
+  height: var(--modulosHeight);
+  background-color: #494181;
+}
+.tecnologiasProject {
+  width: 100%;
+  height: var(--tecnologiasHeight);
+  background-color: #a54141;
+}
+.contactoProject {
+  width: 100%;
+  height: var(--contactoHeight);
+  background-color: #ffcc00;
+}
+.tituloInicio {
+  padding-top: 20px;
+  font-size: 40px;
+  font-style: italic;
+}
+.presenta {
+  position: absolute;
+  background-color: #00000097;
+  backdrop-filter: blur(2px);
+  text-align: center;
+  color: #fff;
+  z-index: 20;
+  width: 100%;
+}
+.textoInicio {
+  text-align: center;
+  font-weight: bold;
+  font-size: 14px;
+  background-color: #fff;
+  padding: 20px;
+  height: 65.33px;
+}
+.logo {
+  width: 100%;
+}
+.ajustar {
+  display: flex;
+  align-items: center;
+  height: 404.66px;
+  overflow: hidden;
+}
+.hero {
+  min-width: 100%;
+  max-width: 100%;
+}
+.titulosPosInicio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 30px;
+  padding: 5px;
+  background-color: #37b800;
+  max-height: 40px;
+  min-height: 40px;
+  border: 2px solid #000;
+  border-top: none;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.cambioColorVerdeBlanco {
+  width: 100%;
+  min-height: 128px;
+  background: linear-gradient(to bottom, #fff, #37b800);
+}
+.modulitos {
+  background-color: #00000078;
+  border: 2px solid black;
+  min-height: 215px;
+  max-height: 215px;
+  overflow: hidden;
+  z-index: 40;
+}
+.modulito1 {
+  position: relative;
+  width: 100%;
+  transition: right 0.5s;
+  transform: scale(1.5);
+  right: 700px;
+}
+.modulitos:hover > .modulito1 {
+  right: 0;
+}
+.modulito2 {
+  position: relative;
+  width: 100%;
+  transition: left 0.5s;
+  transform: scale(1.5);
+  left: 1000px;
+}
+.modulitos:hover > .modulito2 {
+  left: 0;
+}
+.modulito3 {
+  position: relative;
+  width: 100%;
+  transition: right 0.5s;
+  transform: scale(1.5);
+  right: 1000px;
+}
+.modulitos:hover > .modulito3 {
+  right: 0;
+}
+.modulito4 {
+  position: relative;
+  width: 100%;
+  transition: left 0.5s;
+  transform: scale(1.5);
+  left: 700px;
+}
+.modulitos:hover > .modulito4 {
+  left: 0;
+}
+.contenidoModu {
+  position: relative;
+  background-color: #000000;
+  backdrop-filter: blur(2px);
+  color: #fff;
+  z-index: 30;
+  text-align: center;
+}
+.tituloModu {
+  font-style: italic;
+  position: absolute;
+  display: block;
+  top: 70px;
+  font-size: 20px;
+  text-align: center;
+}
+.textoModu {
+  position: absolute;
+  top: 100px;
+}
+.cambioColorNegroNaranja {
+  width: 100%;
+  min-height: 128px;
+  background: linear-gradient(to bottom, #242444, #37b800);
+}
+[class*=cambioColor]{
+  border: none;
+  border-inline: 2px solid #000;
+}
+/* ------------- */
+.policia {
+  overflow: hidden;
+  margin: 10px auto;
+}
+/* CONTENEDOR DE CARTAS */
+.container {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 1em;
+  height: 400px;
+  transition: all 400ms;
+}
+/* CARTAS */
+.box {
+  border: 2px solid #000;
+  border-radius: 10px;
+  position: relative;
+  background: var(--img) center center;
+  background-size: cover;
+  transition: all 400ms;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* PARA LOS NOMBRES DE LAS CARTAS QUE ESTÁN ABAJO INVISIBLES */
+.box::after {
+  content: attr(data-text);
+  position: absolute;
+  bottom: 20px;
+  background: #000;
+  color: #fff;
+  padding: 10px 10px 10px 14px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  transform: translateY(60px);
+  opacity: 0;
+  transition: all 400ms;
+}
+
+.container:hover .box {
+  filter: grayscale(100%) opacity(24%);
+}
+/* PARA QUE LAS CARTAS SE MUESTREN Y SUBAN */
+.box:hover::after {
+  transform: translateY(0);
+  opacity: 1;
+  transition-delay: 400ms;
+}
+.container .box:hover {
+  filter: grayscale(0%) opacity(100%);
+}
+.container:has(.box-1:hover) {
+  grid-template-columns: 3fr 1fr 1fr 1fr 1fr;
+}
+.container:has(.box-2:hover) {
+  grid-template-columns: 1fr 3fr 1fr 1fr 1fr;
+}
+.container:has(.box-3:hover) {
+  grid-template-columns: 1fr 1fr 3fr 1fr 1fr;
+}
+.container:has(.box-4:hover) {
+  grid-template-columns: 1fr 1fr 1fr 3fr 1fr;
+}
+.container:has(.box-5:hover) {
+  grid-template-columns: 1fr 1fr 1fr 1fr 3fr;
+}
+.box:nth-child(odd) {
+  transform: translateY(-16px);
+}
+.box:nth-child(even) {
+  transform: translateY(16px);
+}
+.cambioColorNaranjaVerde {
+  width: 100%;
+  min-height: 128px;
+  background: linear-gradient(to bottom, #a54141, #37b800);
+}
+.contactame {
+  width: 50%;
+  min-height: 300px;
+  max-height: 300px;
+  margin: 20px auto;
+  display: flex;
+  flex-flow: column;
+}
+.footer {
+  width: 100%;
+  min-height: 90px;
+  max-height: 90px;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contactame input[type="text"],
+.contactame input[type="email"],
+.contactame input[type="submit"] {
+  width: 100%;
+  padding: 20px;
+  border-radius: 3px;
+  border: 1px solid #226fc1;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+.contactame input[type="submit"] {
+  width: 200px;
+  margin: 0 auto;
+  background-color: none;
+  border: 1px solid #4fb560;
+  color: #4fb560;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 3px;
+}
+.contactame input[type="submit"]:hover {
+  background-color: #4fb560;
+  color: #fff;
+}
+.contactame input[type="text"]:focus,
+.contactame input[type="email"]:focus,
+.contactame input[type="submit"]:focus {
+  border: 2px solid #4fb560;
+}
+
+/* .fragmento1:hover{
+  background-color: #000;
+  grid-template-columns: 2fr repeat(5,1fr);
+
+} */
+
+/* -------------------------------------------------------- */
+/* -------------------------------------------------------- */
+/* selectores generales */
+a {
+  text-decoration: none;
+  color: #ffcc00;
+}
+h3{
+  color: #fff;
+  font-size: 40px;
+  text-align: center;
+}
+.insta{
+  color: #fff;
+  font-size: 40px;
+}
+/* -------------------------------------------------------- */
+/* -------------------------------------------------------- */
+/* Hover */
+.opcion:hover {
+  background-color: #5aba2e;
+}
+a:hover {
+  text-decoration: underline;
+  color: rgb(166, 255, 0);
+}
+.logo:hover {
+  transform: scale(1.2);
+  transition: all 0.8s;
+}
+/* .ajustar:hover {
+  transition: all 0.8s;
+  overflow: visible;
+  z-index: 10;
+} */
+
+.ajustar:hover > img {
+  transition: all 0.8s;
+  transform: scale(1.1);
+}
+/* -------------------------------------------------------- */
+/* -------------------------------------------------------- */
+/* Media Querys */
+@media only screen and (max-width: 720px) {
+  .media1 {
+    max-width: 15%;
+  }
+  .media2 {
+    max-width: 85%;
+  }
+  .menuOpciones {
+    max-width: 100%;
+    min-height: 30px;
+  }
+  [class*="col-"] {
+    width: 100%;
+  }
+  .opcion {
+    float: left;
+    max-width: 25%;
+    min-height: 20%;
+  }
+  .logoPrincipal {
+    min-height: 102px;
+    max-height: 102px;
+  }
+  .contenedorh1 {
+    min-height: 102px;
+    max-height: 102px;
+  }
+  .modulitos {
+    outline: 2px solid black;
+    min-height: 107.5px;
+    max-height: 107.5px;
+    overflow: hidden;
+  }
+  .modulito1 {
+    position: relative;
+    left: -200px;
+    width: 100%;
+  }
+  .modulito2 {
+    position: relative;
+    left: -200px;
+
+    width: 100%;
+  }
+  .modulito3 {
+    position: relative;
+    left: -200px;
+    width: 100%;
+  }
+  .modulito4 {
+    position: relative;
+    left: -200px;
+    width: 100%;
+  }
+  .tituloModu {
+    top: 25px;
+  }
+  .textoModu {
+    top: 50px;
+  }
+  .modulito1 {
+    position: relative;
+    width: 100%;
+    transition: left 0.5s;
+    transform: scale(1.5);
+    left: 1700px;
+  }
+  .modulitos:hover > .modulito1 {
+    left: 0;
+  }
+  .modulito2 {
+    position: relative;
+    width: 100%;
+    transition: left 0.5s;
+    transform: scale(1.5);
+    left: 900px;
+  }
+  .modulitos:hover > .modulito2 {
+    left: 0;
+  }
+  .modulito3 {
+    position: relative;
+    width: 100%;
+    transition: left 0.5s;
+    transform: scale(1.5);
+    left: 1700px;
+  }
+  .modulitos:hover > .modulito3 {
+    left: 0;
+  }
+  .modulito4 {
+    position: relative;
+    width: 100%;
+    transition: left 0.5s;
+    transform: scale(1.5);
+    left: 900px;
+  }
+  .modulitos:hover > .modulito4 {
+    left: 0;
+  }
+  h3{
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,138 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+img {
+  width: 200px;
+  height: 200px;
+  transition: all 0.6s;
+}
+
+header {
+  outline: 1px solid white;
+}
+header .titulo {
+  text-decoration: none;
+  color: yellow;
+  outline: borde;
+  background-color: black;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 60px;
+  border-radius: 22px;
+}
+header .titulo:hover {
+  text-decoration: underline;
+}
+
+.tamañosDiv, .figuras .figuras_cajasImg4 .imagen4, .figuras .figuras_cajasImg4, .figuras .figuras_cajasImg3 .imagen3, .figuras .figuras_cajasImg3, .figuras .figuras_cajasImg2 .imagen2, .figuras .figuras_cajasImg2, .figuras .figuras_cajasImg1 .imagen1, .figuras .figuras_cajasImg1 {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+}
+
+.figuras {
+  width: 400px;
+  height: 400px;
+  outline: 2px solid rgba(204, 238, 34, 0.9333333333);
+  background-color: lightblue;
+  position: absolute;
+  z-index: 10;
+  overflow: hidden;
+}
+.figuras .figuras_cajasImg1 {
+  z-index: 5;
+  background-color: rgba(152, 193, 217, 0.5);
+}
+.figuras .figuras_cajasImg1 .imagen1 {
+  top: -200px;
+  z-index: -1;
+}
+.figuras .figuras_cajasImg2 {
+  right: 0;
+  background-color: rgba(61, 90, 128, 0.5);
+  z-index: 5;
+}
+.figuras .figuras_cajasImg2 .imagen2 {
+  right: -200px;
+}
+.figuras .figuras_cajasImg3 {
+  bottom: 0;
+  background-color: rgba(224, 251, 252, 0.5);
+  z-index: 5;
+}
+.figuras .figuras_cajasImg3 .imagen3 {
+  left: -200px;
+}
+.figuras .figuras_cajasImg4 {
+  bottom: 0;
+  right: 0;
+  background-color: rgba(238, 108, 77, 0.5);
+  z-index: 5;
+}
+.figuras .figuras_cajasImg4 .imagen4 {
+  bottom: -200px;
+  right: 0;
+}
+
+div:hover > .figuras_cajasImg1 {
+  background-color: #98c1d9;
+}
+div:hover > .figuras_cajasImg1 > .imagen1 {
+  position: absolute;
+  top: 0;
+}
+div:hover > .figuras_cajasImg2 {
+  background-color: #3d5a80;
+}
+div:hover > .figuras_cajasImg2 > .imagen2 {
+  position: absolute;
+  right: 0;
+}
+div:hover > .figuras_cajasImg3 {
+  background-color: #e0fbfc;
+}
+div:hover > .figuras_cajasImg3 > .imagen3 {
+  position: absolute;
+  left: 0;
+}
+div:hover > .figuras_cajasImg4 {
+  background-color: #ee6c4d;
+}
+div:hover > .figuras_cajasImg4 > .imagen4 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+body {
+  background: url(../img/mergo99.jpg) no-repeat fixed center center;
+  background-size: 100%;
+  background-repeat: repeat-y;
+}
+body input[type=text] {
+  color: red;
+}
+body input[type=text]::-moz-placeholder { /*EL & HACE POSIBLE QUE SE VINCULE CON SU "HOVER"*/
+  opacity: 0.2;
+}
+body input[type=text]::placeholder { /*EL & HACE POSIBLE QUE SE VINCULE CON SU "HOVER"*/
+  opacity: 0.2;
+}
+body .fondo {
+  position: fixed;
+  height: 100vw;
+  width: 100vw;
+  z-index: -1;
+  opacity: 0.7;
+}
+body .cajaMadre {
+  color: black;
+}
+body .cajaMadre .cajasHijas {
+  color: lightblue;
+}/*# sourceMappingURL=styles.css.map */

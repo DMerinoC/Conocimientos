@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+}
+
+/* .caja1, .caja2,.caja3, .caja4{
+    outline: 4px solid red;
+} */
+
+div {
+  height: 100px;
+  width: 100px;
+  background-color: yellow;
+  outline: 1px solid red;
+}
+.propText{
+  font-style: italic;
+  font-weight: bold;
+  text-align: justify;
+  /* text-transform: capitalize;    cada palabra empieza con mayuscula*/
+  /* letter-spacing: 3px; ESPACIO ENTRE LETRAFF */
+  /* line-height: 30px;   ESPACIO ENTRE LINEA */
+
+}
+.texto{
+    margin: auto;
+    overflow: auto;
+}
+.caja1 {
+  height: 20px;
+  width: 20px;
+}
+.caja2 {
+  /*EL RELATIVE CONSERVA SU ESPACIO
+SI ESCRIBO TOP 20PX CORRERIA 20PX PARA ABAJO EMPEZANDO DESDE SU PUNTO DE REFERENCIA*/
+  position: relative;
+}
+/*--------------------------------------------------------------------------------------------------------------------------------------*/
+.caja4{
+    overflow: hidden;
+}
+img{
+    position: relative;
+    width: 100px;
+    top: 100px;
+    left: 100px;
+    transition: all 0.8s;
+}
+/*--------------------------------------------------------------------------------------------------------------------------------------*/
+
+div:hover>img{
+    position: relative;
+    width: 100px;
+    top: 0px;
+    left: 0px;
+}

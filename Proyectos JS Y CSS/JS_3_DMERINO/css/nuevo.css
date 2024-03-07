@@ -1,0 +1,36 @@
+* {
+  font-family: "Piazzolla", serif;
+  font-size: 20px;
+}
+.calculadora {
+  margin-top: 20px;
+}
+.calculadora input {
+  font-size: 24px;
+}
+.numeros button {
+  margin-bottom: 10px;
+}
+.signo7,
+.signo8,
+.signo9 {
+  font-weight: bold;
+}
+.calculadora {
+  margin-top: 20px;
+}
+
+.calculadora input {
+  font-size: 24px;
+}
+.numeros button {
+  margin-bottom: 10px;
+  font-size: 20px;
+  min-width: 50px;
+  height: 50px;
+}
+.signo7,
+.signo8,
+.signo9 {
+  font-weight: bold;
+}

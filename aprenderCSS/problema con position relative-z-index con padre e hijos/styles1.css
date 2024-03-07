@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+/* El problema que ocurre es cuando quiere poner al contenedor hijo detrás del padre el z-index no ayudará al menos que ser coloque "-1" al contenedor hijo, al padre no se le pone z-index */
+.padre {
+  outline: 2px solid red;
+  background-color: lightblue;
+  height: 200px;
+  width: 200px;
+  margin: 40px;
+  position: relative;
+}
+.hijo {
+  outline: 2px solid red;
+  background-color: green;
+  height: 70px;
+  width: 70px;
+  position: relative;
+  top: -20px;
+  left: -20px;
+  z-index: -1;
+}

@@ -1,0 +1,39 @@
+/* LOS PSEUDOELEMENTOS TIENEN :: */
+div p::first-letter {
+  font-size: 40px;
+}
+*::selection {
+  background: #f9a03f;
+  color: white;
+}
+.caja {
+  background-color: #f9a03f;
+  width: 200px;
+  height: 200px;
+  position: relative;
+}
+.caja::before {
+  content: "caja magica salida de la nada";
+  color: white;
+  background-color: brown;
+  display: block;
+  width: 250px;
+  height: 20px;
+  position: relative;
+  left: 20px;
+  top: 20px;
+}
+
+.caja::after {
+  content: "otra caja magica";
+  background-color: blueviolet;
+  display: block;
+  width: 200px;
+  height: 40px;
+  position: relative;
+  top: 40px;
+  left: 40px;
+}
+div p::first-line {
+  background: brown;
+}

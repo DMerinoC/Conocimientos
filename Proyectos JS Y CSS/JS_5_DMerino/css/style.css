@@ -1,0 +1,44 @@
+/* Jugador -->AZUL */
+/* Js -->Rojo */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+h1 {
+  text-align: center;
+  background-color: #000;
+  color: #fff;
+  font-size: 50px;
+}
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+.contenedor {
+  width: 516px;
+  height: 520px;
+  margin: 5px auto;
+  background-color: #000;
+}
+button {
+  background-color: #7d7198;
+  height: 170px;
+  width: 170px;
+}
+button:hover {
+  cursor: pointer;
+  background-color: greenyellow;
+}
+#btnNuevo {
+  width: 100px;
+  height: 50px;
+  border-radius: 10px;
+  position: absolute;
+  background-color: #e8dc00e7;
+  margin: 20px;
+}
