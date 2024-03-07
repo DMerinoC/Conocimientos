@@ -1,0 +1,1 @@
+Utilizar la consola para js. Hay explicaciones en ella.
